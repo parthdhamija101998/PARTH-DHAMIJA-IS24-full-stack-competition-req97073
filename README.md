@@ -5,9 +5,10 @@ This is the Web Application for Managing Products being developed by the IMB sub
 ## Installation instructions
 To install the application, follow these steps:
 
-Clone the repository to your local machine.
-Navigate to the 'client' directory of the project in your terminal.
-Run 'npm start' to start the application.
+Clone the repository to your local machine. {Please note that the node_modules have been installed already on the client and api side for the project}
+Navigate to the 'docker' directory of the project in your terminal.
+Run 'docker-compose up -d' to start the application.
+Run 'docker-compose down' to end the application.
 
 ## Usage
 
