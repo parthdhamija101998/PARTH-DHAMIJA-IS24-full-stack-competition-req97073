@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+
+  nodejs:
+    build: 
+      context: ../api
+      dockerfile: ../docker/dockerfiles/nodejs
+    ports:
+      - 3000:3000
+
+  nginx:
+    build:
+      context: ../
+      dockerfile: ./docker/dockerfiles/nginx
+    restart: unless-stopped
+    depends_on:
+      - nodejs
+    ports:
+      - 8080:80

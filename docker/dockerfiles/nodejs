@@ -1,0 +1,14 @@
+# Pull from a base image
+FROM node:18.15.0
+
+COPY . .
+
+WORKDIR .
+
+RUN npm install
+
+# Listen on the specified port
+EXPOSE 3000
+
+# Set Node server
+ENTRYPOINT npm run start
