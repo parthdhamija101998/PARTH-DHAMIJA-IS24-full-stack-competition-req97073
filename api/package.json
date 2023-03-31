@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "BC Public Service Products",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parth Dhamija",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.29.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^7.0.3",
+    "mongoose-plugin-autoinc": "^1.1.9",
+    "mongoose-sequence": "^5.3.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
